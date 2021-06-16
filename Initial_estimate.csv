@@ -1,0 +1,14 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,257.85,3094.20,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),,Amazon EC2,0,322.69,3872.28,USD,"Operating system (Linux), Quantity (5), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t4g.xlarge)"
+My Estimate,US East (Ohio),,Amazon Aurora PostgreSQL-Compatible DB,0,6785.45,81425.40,USD,"Storage amount (100 GB), Quantity (1), Instance type (db.r4.16xlarge), Pricing strategy (OnDemand)"
+My Estimate,US East (Ohio),,Amazon Route 53,0,938,11256.00,USD,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)"
+My Estimate,US East (Ohio),,Application Load Balancer,0,600.43,7205.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (Ohio),,Network Load Balancer,0,454.43,5453.16,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour)"
+My Estimate,US East (Ohio),,Amazon CloudWatch,0,116.25014999999999,1395.00,USD,"GetMetricData: Number of metrics requested (10), Number of other API requests (5), Total number of events for DynamoDB (10 million events per month), Number of Contributor Insights rules for DynamoDB (100), Standard Logs: Data Ingested (100 GB), Expected Logs Data scanned (100 GB), Number of Dashboards (5)"
+My Estimate,US East (Ohio),,Amazon EC2,0,71.53999999999999,858.48,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (100 GB), Instance type (t4g.xlarge)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
