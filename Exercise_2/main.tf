@@ -1,8 +1,8 @@
 #https://gist.github.com/smithclay/e026b10980214cbe95600b82f67b4958
 
 provider "aws" {
-  access_key="AKIAT2CV7RVEFLEJUH4Q"
-  secret_key="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"
+  access_key="xxx"
+  secret_key="xxx"
   region = "eu-central-1"
 }
 

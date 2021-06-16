@@ -1,8 +1,8 @@
 # https://github.com/maxgherman/udacity-aws-cloud-architect/blob/master/design-provision-monitor-aws-Infra-at-scale/Exercise_1/main.tf
 # TODO: Designate a cloud provider, region, and credentials
 provider "aws" {
-  access_key="AKIAT2CV7RVEFLEJUH4Q"
-  secret_key="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"
+  access_key="xxx"
+  secret_key="xxx"
   region = "eu-central-1"
 }
 
