@@ -1,0 +1,16 @@
+,,,,,,,
+Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+US East (N. Virginia),,Amazon EC2,0,"606,67","7280,04",USD,"Operating system (Linux), Quantity (6), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (t4g.xlarge)"
+US East (N. Virginia),,Amazon EC2,0,"606,67","7280,04",USD,"Operating system (Linux), Quantity (6), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (t4g.xlarge)"
+US East (N. Virginia),,Amazon RDS for PostgreSQL,0,"979,76","11757,12",USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Nodes (2), Instance Type (db.m5.large), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+US East (N. Virginia),,Amazon RDS for PostgreSQL,0,"1951,24","23414,88",USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (991 GB per month), Nodes (4), Instance Type (db.m5.large), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+US East (N. Virginia),,Amazon Route 53,0,"1938,4","23260,8",USD,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)"
+US East (N. Virginia),,S3 Standard,0,"123,1","1477,2",USD,S3 Standard storage (5000 GB per month)
+US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,"482,85","5794,2",USD,Number of NAT Gateways (1)
+US East (N. Virginia),,Application Load Balancer,0,"1330,43","15965,16",USD,Number of Application Load Balancers (1)
+US East (N. Virginia),,Network Load Balancer,0,"454,43","5453,16",USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour)"
+US East (N. Virginia),,Amazon CloudWatch,0,"86,19223","1034,31",USD,"Number of Metrics (includes detailed and custom metrics) (10), GetMetricData: Number of metrics requested (1), GetMetricWidgetImage: Number of metrics requested (1), Number of other API requests (20), Standard Logs: Data Ingested (100 GB), Expected Logs Data scanned (100 GB), Number of Dashboards (5), Number of Lambda functions (5), Number of requests per function (100 per hour), Total number of events for DynamoDB (1 million events per month), Total number of matched log events for CloudWatch (1 million matched log events per month), Number of Contributor Insights rules for CloudWatch (5), Number of Contributor Insights rules for DynamoDB (5)"
+,,,,,,,
+,,,SUM,"8559,74223",,,
+,,,,,,,
+https://calculator.aws/#/estimate?id=e278fd03d681a54a0755db2b14a73c9d0467fee5,,,,,,,

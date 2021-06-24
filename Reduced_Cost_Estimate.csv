@@ -1,14 +1,20 @@
-Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,257.85,3094.20,USD,Number of NAT Gateways (1)
-My Estimate,US East (Ohio),,Amazon EC2,0,322.69,3872.28,USD,"Operating system (Linux), Quantity (5), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t4g.xlarge)"
-My Estimate,US East (Ohio),,Amazon Aurora PostgreSQL-Compatible DB,0,4420.25,53043.00,USD,"Storage amount (100 GB), Quantity (1), Instance type (db.r4.16xlarge), Pricing strategy (Reserved 1yr No Upfront)"
-My Estimate,US East (Ohio),,Amazon Route 53,0,481.75,5781.00,USD,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (5)"
-My Estimate,US East (Ohio),,Application Load Balancer,0,308.43,3701.16,USD,Number of Application Load Balancers (1)
-My Estimate,US East (Ohio),,Network Load Balancer,0,169.73000000000002,2036.76,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (35 GB per hour)"
-My Estimate,US East (Ohio),,Amazon CloudWatch,0,116.25014999999999,1395.00,USD,"GetMetricData: Number of metrics requested (10), Number of other API requests (5), Total number of events for DynamoDB (10 million events per month), Number of Contributor Insights rules for DynamoDB (100), Standard Logs: Data Ingested (100 GB), Expected Logs Data scanned (100 GB), Number of Dashboards (5)"
-My Estimate,US East (Ohio),,Amazon EC2,0,71.53999999999999,858.48,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (100 GB), Instance type (t4g.xlarge)"
-,,,,,,,,
-,,,,,,,,
-,,,,,,Network Balancer,Reduced processed bytes per NLB for TCP to 35,
-Acknowledgement,,,,,,Amazon Route 53,Reduced number of elastic network interfaces from 10 to 5,
-"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,Aurora DB,Changed pricing strategy to (Reserved 1yr No Upfront from On-Demand,
+Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+US East (N. Virginia),,Amazon EC2,0,"387,23","4646,76",USD,"Operating system (Linux), Quantity (6), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t4g.xlarge)"
+US East (N. Virginia),,Amazon EC2,0,"387,23","4646,76",USD,"Operating system (Linux), Quantity (6), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t4g.xlarge)"
+US East (N. Virginia),,Amazon RDS for PostgreSQL,0,"792,88","9514,56",USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Nodes (2), Instance Type (db.m5.large), Deployment Option (Multi-AZ), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (No Upfront)"
+US East (N. Virginia),,Amazon RDS for PostgreSQL,0,"1577,48","18929,76",USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (991 GB per month), Nodes (4), Instance Type (db.m5.large), Deployment Option (Multi-AZ), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (No Upfront)"
+US East (N. Virginia),,Amazon Route 53,0,"1457,15","17485,8",USD,"Hosted Zones (1), Basic Checks Within AWS (50), Number of Elastic Network Interfaces (5)"
+US East (N. Virginia),,S3 Standard,0,"123,1","1477,2",USD,S3 Standard storage (5000 GB per month)
+US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,"482,85","5794,2",USD,Number of NAT Gateways (1)
+US East (N. Virginia),,Application Load Balancer,0,"892,43","10709,16",USD,Number of Application Load Balancers (1)
+US East (N. Virginia),,Network Load Balancer,0,"235,43","2825,16",USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (50 GB per hour)"
+US East (N. Virginia),,Amazon CloudWatch,0,"86,19223","1034,31",USD,"Number of Metrics (includes detailed and custom metrics) (10), GetMetricData: Number of metrics requested (1), GetMetricWidgetImage: Number of metrics requested (1), Number of other API requests (20), Standard Logs: Data Ingested (100 GB), Expected Logs Data scanned (100 GB), Number of Dashboards (5), Number of Lambda functions (5), Number of requests per function (100 per hour), Total number of events for DynamoDB (1 million events per month), Total number of matched log events for CloudWatch (1 million matched log events per month), Number of Contributor Insights rules for CloudWatch (5), Number of Contributor Insights rules for DynamoDB (5)"
+,,,,,,,
+,,,SUM,"6421,97223","77063,67",,
+,,,,,,,
+,,,,CHANGES,,,
+,,,,EC2 pricing strategy changed from on-demand to 1-year prepaid reserved instances for both web and application servers.,https://calculator.aws/#/estimate?id=f052813a0481652542e86d805235f115f523415d,,
+,,,,RDS ricing strategy changed from on-demand to 1-year prepaid reserved instances,,,
+,,,,Route 53 changed number of Elastic Network Instances from 10 to 5 and reduced number of basic checks,,,
+,,,,Application Load Balancer - reduces number of processed GB per month (EC2 and IP),,,
+,,,,Network Load Balancer - reduces number of processed GB per month (NLB for TCP),,,

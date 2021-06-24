@@ -1,20 +1,26 @@
-Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,515.7,6188.40,USD,Number of NAT Gateways (2)
-My Estimate,US East (Ohio),,Amazon EC2,0,572.31,6867.72,USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (100 GB), Instance type (t4g.xlarge)"
-My Estimate,US East (Ohio),,Amazon Aurora PostgreSQL-Compatible DB,0,8829.449999999999,105953.40,USD,"Storage amount (100 GB), Quantity (2), Instance type (db.r4.16xlarge), Pricing strategy (Reserved 1yr No Upfront)"
-My Estimate,US East (Ohio),,Amazon Route 53,0,938,11256.00,USD,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)"
-My Estimate,US East (Ohio),,Application Load Balancer,0,1184.43,14213.16,USD,Number of Application Load Balancers (1)
-My Estimate,US East (Ohio),,Network Load Balancer,0,892.43,10709.16,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (200 GB per hour)"
-My Estimate,US East (Ohio),,Amazon CloudWatch,0,135.7367,1628.84,USD,"GetMetricData: Number of metrics requested (10), Number of other API requests (10), Total number of events for DynamoDB (10 million events per month), Number of Contributor Insights rules for DynamoDB (100), Standard Logs: Data Ingested (97 GB), Expected Logs Data scanned (100 GB), Number of Dashboards (10), Number of Metrics (includes detailed and custom metrics) (20)"
-My Estimate,US East (Ohio),,Amazon EC2,0,572.31,6867.72,USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (100 GB), Instance type (t4g.xlarge)"
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-Acknowledgement,,,,,,,,
-"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,EC2 – increased from to 8 for both application server and web server,,,,,
-,,,RDS - increased number of instances from 1 to 2,,,,,
-,,,Route 53 - increased number of Elastic Network Instances from 5 to 10,,,,,
-,,,VPC - increased number of NAT Gateways from 1 to 2. One per availability zone,,,,,
-,,,Application Load Balancer - increased number of processed GB per month (EC2 and IP),,,,,
-,,,Network Load Balancer - increased number of processed GB per month (NLB for TCP),,,,,
-,,,Amazon CloudWatch – increased number of logs and metrics,,,,,
+Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+US East (N. Virginia),,Amazon EC2,0,"572,31","6867,72",USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (100 GB), Instance type (t4g.xlarge)"
+US East (N. Virginia),,Amazon EC2,0,"572,31","6867,72",USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (100 GB), Instance type (t4g.xlarge)"
+US East (N. Virginia),,Amazon RDS for PostgreSQL,0,"1959,52","23514,24",USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Nodes (4), Instance Type (db.m5.large), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+US East (N. Virginia),,Amazon RDS for PostgreSQL,0,"1951,24","23414,88",USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (991 GB per month), Nodes (4), Instance Type (db.m5.large), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+US East (N. Virginia),,Amazon Route 53,0,"1988,4","23860,8",USD,"Hosted Zones (1), Basic Checks Within AWS (200), Number of Elastic Network Interfaces (10)"
+US East (N. Virginia),,S3 Standard,0,"262,4","3148,8",USD,S3 Standard storage (10000 GB per month)
+US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,"965,7","11588,4",USD,Number of NAT Gateways (2)
+US East (N. Virginia),,Application Load Balancer,0,"3958,43","47501,16",USD,Number of Application Load Balancers (1)
+US East (N. Virginia),,Network Load Balancer,0,"892,43","10709,16",USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (200 GB per hour)"
+US East (N. Virginia),,Amazon CloudWatch,0,"1159,79631","13917,56",USD,"Number of Metrics (includes detailed and custom metrics) (100), GetMetricData: Number of metrics requested (10), GetMetricWidgetImage: Number of metrics requested (10), Number of other API requests (200), Standard Logs: Data Ingested (1000 GB), Expected Logs Data scanned (993 GB), Number of Dashboards (20), Number of Lambda functions (10), Number of requests per function (1000 per hour), Total number of events for DynamoDB (10 million events per month), Total number of matched log events for CloudWatch (10 million matched log events per month), Number of Contributor Insights rules for CloudWatch (5), Number of Contributor Insights rules for DynamoDB (50), Number of Custom/Cross-account events (10), Vended Logs: Data Ingested (1000 GB)"
+US East (N. Virginia),,AWS Web Application Firewall (WAF),0,260,3120,USD,"Number of Rules added per Web ACL (10 per month), Number of Web Access Control Lists (Web ACLs) utilized (50 per month), Number of Rule Groups per Web ACL ( per month)"
+US East (N. Virginia),,Amazon RDS for PostgreSQL,0,"1959,52","23514,24",USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Nodes (4), Instance Type (db.m5.large), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+US East (N. Virginia),,Amazon RDS for PostgreSQL,0,"1959,52","23514,24",USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Nodes (4), Instance Type (db.m5.large), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+,,,,,,,
+,,,SUM,"18461,57631","221538,92",,
+,,,,,,,
+,,,,,CHANGES,,
+,,,,,"EC2- increased number of instances from total 6 to 8 for the Web Servers and 6 to 8 for the Application Servers, increased storage to 100 GB",,
+,,,,,Route 53 - increased number of Elastic Network Instances from 5 to 10,,
+,,,,,VPC - increased number of NAT Gateways from 1 to 2. One per availability zone,,
+,,,,,Application Load Balancer - increased number of processed GB per month (EC2 and IP),,
+,,,,,Network Load Balancer - increased number of processed GB per month (NLB for TCP),,
+,,,,,Web Application Firewall- introduced web application firewall,,
+,,,,,CouldWatch - increased number of logs and metrics,,
+,,,,,RDS - increased number of instances from 1 to 2. One master per availability zone,,
